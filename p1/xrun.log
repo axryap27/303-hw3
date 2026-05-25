@@ -1,0 +1,61 @@
+xrun: 18.09-s011: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun	18.09-s011: Started on May 25, 2026 at 11:23:25 CDT
+xrun
+	transition_detector.v
+	transition_detector_tb.v
+	-access +rwc
+file: transition_detector.v
+	module worklib.transition_detector:v
+		errors: 0, warnings: 0
+file: transition_detector_tb.v
+	module worklib.transition_detector_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		transition_detector_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.transition_detector_tb:v <0x03154f24>
+			streams:   7, words: 11813
+		worklib.transition_detector:v <0x0cf939c1>
+			streams:   4, words:  1104
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Registers:               5       5
+		Scalar wires:            4       -
+		Always blocks:           2       2
+		Initial blocks:          2       2
+		Cont. assignments:       1       1
+		Pseudo assignments:      3       3
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.transition_detector_tb:v
+Loading snapshot worklib.transition_detector_tb:v .................... Done
+xcelium> source /vol/cadence2018/XCELIUM1809/tools/xcelium/files/xmsimrc
+xcelium> run
+  time | rstb | in | out | Q1 Q0
+-------+------+----+-----+------
+     0 |  0   | 0  |  0  |  0  0
+ 10000 |  1   | 0  |  0  |  0  0
+ 20000 |  1   | 1  |  0  |  0  0
+ 25000 |  1   | 1  |  1  |  1  1
+ 35000 |  1   | 1  |  0  |  1  0
+ 40000 |  1   | 0  |  0  |  1  0
+ 45000 |  1   | 0  |  1  |  0  1
+ 55000 |  1   | 0  |  0  |  0  0
+ 60000 |  1   | 1  |  0  |  0  0
+ 65000 |  1   | 1  |  1  |  1  1
+ 70000 |  1   | 0  |  1  |  1  1
+ 75000 |  1   | 0  |  1  |  0  1
+ 80000 |  1   | 1  |  1  |  0  1
+ 85000 |  1   | 1  |  1  |  1  1
+ 95000 |  1   | 1  |  0  |  1  0
+100000 |  1   | 0  |  0  |  1  0
+105000 |  1   | 0  |  1  |  0  1
+Simulation complete via $finish(1) at time 115 NS + 0
+./transition_detector_tb.v:58         #5 $finish;
+xcelium> exit
+TOOL:	xrun	18.09-s011: Exiting on May 25, 2026 at 11:23:27 CDT  (total: 00:00:02)

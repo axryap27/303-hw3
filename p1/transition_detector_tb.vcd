@@ -1,0 +1,141 @@
+$date
+    May 25, 2026  11:23:27
+$end
+$version
+    TOOL:	xmsim	18.09-s011
+$end
+$timescale
+    1 ps
+$end
+
+$scope module transition_detector_tb $end
+$var reg       1 !    clk $end
+$var reg       1 "    rstb $end
+$var reg       1 #    in $end
+$var wire      1 $    out  $end
+
+$scope module dut $end
+$var wire      1 %    clk  $end
+$var wire      1 &    rstb  $end
+$var wire      1 '    in  $end
+$var wire      1 $    out  $end
+$var reg       1 (    Q1 $end
+$var reg       1 )    Q0 $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+$end
+#5000
+1!
+1%
+#10000
+0!
+1"
+1&
+0%
+#15000
+1!
+1%
+#20000
+0!
+1#
+1'
+0%
+#25000
+1!
+1%
+1(
+1)
+1$
+#30000
+0!
+0%
+#35000
+1!
+1%
+0)
+0$
+#40000
+0!
+0#
+0'
+0%
+#45000
+1!
+1%
+0(
+1)
+1$
+#50000
+0!
+0%
+#55000
+1!
+1%
+0)
+0$
+#60000
+0!
+1#
+1'
+0%
+#65000
+1!
+1%
+1(
+1)
+1$
+#70000
+0!
+0#
+0'
+0%
+#75000
+1!
+1%
+0(
+#80000
+0!
+1#
+1'
+0%
+#85000
+1!
+1%
+1(
+#90000
+0!
+0%
+#95000
+1!
+1%
+0)
+0$
+#100000
+0!
+0#
+0'
+0%
+#105000
+1!
+1%
+0(
+1)
+1$
+#110000
+0!
+0%
+#115000
+1!
