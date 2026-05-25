@@ -59,22 +59,22 @@ module memory_module_tb;
         @(negedge CLK) RSTB = 1'b1;
         @(negedge CLK) CE   = 1'b1;
 
-        // ============ Phase A: SEQ = 0 writes (3 of them) ============
+        // Phase A: SEQ = 0 writes (3 of them)
         @(negedge CLK) begin WE = 1'b1; ADDRESS = 8'h10; INPUT = 8'hAA; end
         @(negedge CLK) begin             ADDRESS = 8'h11; INPUT = 8'hBB; end
         @(negedge CLK) begin             ADDRESS = 8'h12; INPUT = 8'hCC; end
 
-        // ============ Phase B: SEQ = 0 reads (3 of them) ============
+        // Phase B: SEQ = 0 reads (3 of them)
         @(negedge CLK) begin WE = 1'b0; ADDRESS = 8'h10; end  // expect AA
         @(negedge CLK)                  ADDRESS = 8'h11;       // expect BB
         @(negedge CLK)                  ADDRESS = 8'h12;       // expect CC
 
-        // ============ Phase C: CE = 0 -> OUTPUT should be 8'bz ============
+        // Phase C: CE = 0 -> OUTPUT should be 8'bz
         @(negedge CLK) CE = 1'b0;
         @(negedge CLK);
         @(negedge CLK) CE = 1'b1;
 
-        // ============ Phase D: SEQ = 1 writes (4 sequential) ============
+        // Phase D: SEQ = 1 writes (4 sequential)
         @(negedge CLK) begin WE = 1'b1; SEQ = 1'b1; ADDRESS = 8'h20; INPUT = 8'h11; end
         @(negedge CLK)                                                INPUT = 8'h22;
         @(negedge CLK)                                                INPUT = 8'h33;
@@ -85,7 +85,7 @@ module memory_module_tb;
         // Also drop WE so the transition cycle does not corrupt MEM[20].
         @(negedge CLK) begin SEQ = 1'b0; WE = 1'b0; end
 
-        // ============ Phase E: SEQ = 1 reads (4 sequential) ============
+        // Phase E: SEQ = 1 reads (4 sequential)
         @(negedge CLK) begin SEQ = 1'b1; ADDRESS = 8'h20; end  // expect 11
         @(negedge CLK);                                          // expect 22
         @(negedge CLK);                                          // expect 33
