@@ -1,0 +1,17 @@
+# Cadence Xcelium simulation artifacts
+xcelium.d/
+.simvision/
+waves.shm/
+*.dsn
+*.trn
+xrun.history
+xrun.key
+
+# Cadence Genus synthesis intermediates
+**/Synthesis/fv/
+**/Synthesis/genus.cmd
+**/Synthesis/.rs_*.tstamp
+
+# OS / editor junk
+.DS_Store
+*.swp
