@@ -1,3 +1,0 @@
-s1(25May2026:11:23:25):  xrun transition_detector.v transition_detector_tb.v -access +rwc 
-s2(25May2026:12:39:43):  xrun -gui transition_detector.v transition_detector_tb.v -access +rwc 
-s3(25May2026:13:23:07):  xrun -gui transition_detector.v transition_detector_tb.v -access +rwc 
