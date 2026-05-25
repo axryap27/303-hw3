@@ -5,3 +5,4 @@
 # OS:   Red Hat Enterprise Linux release 8.10 (Ootpa)
 
 source ../synth_opt_high.tcl
+exit
