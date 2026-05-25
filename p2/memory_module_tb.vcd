@@ -1,0 +1,1093 @@
+$date
+    May 25, 2026  14:35:57
+$end
+$version
+    TOOL:	xmsim	18.09-s011
+$end
+$timescale
+    1 ps
+$end
+
+$scope module memory_module_tb $end
+$var reg       1 !    CLK $end
+$var reg       1 "    RSTB $end
+$var reg       1 #    WE $end
+$var reg       1 $    CE $end
+$var reg       1 %    SEQ $end
+$var reg       8 &    ADDRESS [7:0] $end
+$var reg       8 '    INPUT [7:0] $end
+$var wire      8 (    OUTPUT [7:0] $end
+
+$scope module dut $end
+$var wire      1 )    CLK  $end
+$var wire      1 *    RSTB  $end
+$var wire      1 +    WE  $end
+$var wire      1 ,    CE  $end
+$var wire      1 -    SEQ  $end
+$var wire      8 .    ADDRESS [7:0] $end
+$var wire      8 /    INPUT [7:0] $end
+$var wire      8 (    OUTPUT [7:0] $end
+$var reg       8 0    MEM[0] [7:0] $end
+$var reg       8 1    MEM[1] [7:0] $end
+$var reg       8 2    MEM[2] [7:0] $end
+$var reg       8 3    MEM[3] [7:0] $end
+$var reg       8 4    MEM[4] [7:0] $end
+$var reg       8 5    MEM[5] [7:0] $end
+$var reg       8 6    MEM[6] [7:0] $end
+$var reg       8 7    MEM[7] [7:0] $end
+$var reg       8 8    MEM[8] [7:0] $end
+$var reg       8 9    MEM[9] [7:0] $end
+$var reg       8 :    MEM[10] [7:0] $end
+$var reg       8 ;    MEM[11] [7:0] $end
+$var reg       8 <    MEM[12] [7:0] $end
+$var reg       8 =    MEM[13] [7:0] $end
+$var reg       8 >    MEM[14] [7:0] $end
+$var reg       8 ?    MEM[15] [7:0] $end
+$var reg       8 @    MEM[16] [7:0] $end
+$var reg       8 A    MEM[17] [7:0] $end
+$var reg       8 B    MEM[18] [7:0] $end
+$var reg       8 C    MEM[19] [7:0] $end
+$var reg       8 D    MEM[20] [7:0] $end
+$var reg       8 E    MEM[21] [7:0] $end
+$var reg       8 F    MEM[22] [7:0] $end
+$var reg       8 G    MEM[23] [7:0] $end
+$var reg       8 H    MEM[24] [7:0] $end
+$var reg       8 I    MEM[25] [7:0] $end
+$var reg       8 J    MEM[26] [7:0] $end
+$var reg       8 K    MEM[27] [7:0] $end
+$var reg       8 L    MEM[28] [7:0] $end
+$var reg       8 M    MEM[29] [7:0] $end
+$var reg       8 N    MEM[30] [7:0] $end
+$var reg       8 O    MEM[31] [7:0] $end
+$var reg       8 P    MEM[32] [7:0] $end
+$var reg       8 Q    MEM[33] [7:0] $end
+$var reg       8 R    MEM[34] [7:0] $end
+$var reg       8 S    MEM[35] [7:0] $end
+$var reg       8 T    MEM[36] [7:0] $end
+$var reg       8 U    MEM[37] [7:0] $end
+$var reg       8 V    MEM[38] [7:0] $end
+$var reg       8 W    MEM[39] [7:0] $end
+$var reg       8 X    MEM[40] [7:0] $end
+$var reg       8 Y    MEM[41] [7:0] $end
+$var reg       8 Z    MEM[42] [7:0] $end
+$var reg       8 [    MEM[43] [7:0] $end
+$var reg       8 \    MEM[44] [7:0] $end
+$var reg       8 ]    MEM[45] [7:0] $end
+$var reg       8 ^    MEM[46] [7:0] $end
+$var reg       8 _    MEM[47] [7:0] $end
+$var reg       8 `    MEM[48] [7:0] $end
+$var reg       8 a    MEM[49] [7:0] $end
+$var reg       8 b    MEM[50] [7:0] $end
+$var reg       8 c    MEM[51] [7:0] $end
+$var reg       8 d    MEM[52] [7:0] $end
+$var reg       8 e    MEM[53] [7:0] $end
+$var reg       8 f    MEM[54] [7:0] $end
+$var reg       8 g    MEM[55] [7:0] $end
+$var reg       8 h    MEM[56] [7:0] $end
+$var reg       8 i    MEM[57] [7:0] $end
+$var reg       8 j    MEM[58] [7:0] $end
+$var reg       8 k    MEM[59] [7:0] $end
+$var reg       8 l    MEM[60] [7:0] $end
+$var reg       8 m    MEM[61] [7:0] $end
+$var reg       8 n    MEM[62] [7:0] $end
+$var reg       8 o    MEM[63] [7:0] $end
+$var reg       8 p    MEM[64] [7:0] $end
+$var reg       8 q    MEM[65] [7:0] $end
+$var reg       8 r    MEM[66] [7:0] $end
+$var reg       8 s    MEM[67] [7:0] $end
+$var reg       8 t    MEM[68] [7:0] $end
+$var reg       8 u    MEM[69] [7:0] $end
+$var reg       8 v    MEM[70] [7:0] $end
+$var reg       8 w    MEM[71] [7:0] $end
+$var reg       8 x    MEM[72] [7:0] $end
+$var reg       8 y    MEM[73] [7:0] $end
+$var reg       8 z    MEM[74] [7:0] $end
+$var reg       8 {    MEM[75] [7:0] $end
+$var reg       8 |    MEM[76] [7:0] $end
+$var reg       8 }    MEM[77] [7:0] $end
+$var reg       8 ~    MEM[78] [7:0] $end
+$var reg       8 !!   MEM[79] [7:0] $end
+$var reg       8 "!   MEM[80] [7:0] $end
+$var reg       8 #!   MEM[81] [7:0] $end
+$var reg       8 $!   MEM[82] [7:0] $end
+$var reg       8 %!   MEM[83] [7:0] $end
+$var reg       8 &!   MEM[84] [7:0] $end
+$var reg       8 '!   MEM[85] [7:0] $end
+$var reg       8 (!   MEM[86] [7:0] $end
+$var reg       8 )!   MEM[87] [7:0] $end
+$var reg       8 *!   MEM[88] [7:0] $end
+$var reg       8 +!   MEM[89] [7:0] $end
+$var reg       8 ,!   MEM[90] [7:0] $end
+$var reg       8 -!   MEM[91] [7:0] $end
+$var reg       8 .!   MEM[92] [7:0] $end
+$var reg       8 /!   MEM[93] [7:0] $end
+$var reg       8 0!   MEM[94] [7:0] $end
+$var reg       8 1!   MEM[95] [7:0] $end
+$var reg       8 2!   MEM[96] [7:0] $end
+$var reg       8 3!   MEM[97] [7:0] $end
+$var reg       8 4!   MEM[98] [7:0] $end
+$var reg       8 5!   MEM[99] [7:0] $end
+$var reg       8 6!   MEM[100] [7:0] $end
+$var reg       8 7!   MEM[101] [7:0] $end
+$var reg       8 8!   MEM[102] [7:0] $end
+$var reg       8 9!   MEM[103] [7:0] $end
+$var reg       8 :!   MEM[104] [7:0] $end
+$var reg       8 ;!   MEM[105] [7:0] $end
+$var reg       8 <!   MEM[106] [7:0] $end
+$var reg       8 =!   MEM[107] [7:0] $end
+$var reg       8 >!   MEM[108] [7:0] $end
+$var reg       8 ?!   MEM[109] [7:0] $end
+$var reg       8 @!   MEM[110] [7:0] $end
+$var reg       8 A!   MEM[111] [7:0] $end
+$var reg       8 B!   MEM[112] [7:0] $end
+$var reg       8 C!   MEM[113] [7:0] $end
+$var reg       8 D!   MEM[114] [7:0] $end
+$var reg       8 E!   MEM[115] [7:0] $end
+$var reg       8 F!   MEM[116] [7:0] $end
+$var reg       8 G!   MEM[117] [7:0] $end
+$var reg       8 H!   MEM[118] [7:0] $end
+$var reg       8 I!   MEM[119] [7:0] $end
+$var reg       8 J!   MEM[120] [7:0] $end
+$var reg       8 K!   MEM[121] [7:0] $end
+$var reg       8 L!   MEM[122] [7:0] $end
+$var reg       8 M!   MEM[123] [7:0] $end
+$var reg       8 N!   MEM[124] [7:0] $end
+$var reg       8 O!   MEM[125] [7:0] $end
+$var reg       8 P!   MEM[126] [7:0] $end
+$var reg       8 Q!   MEM[127] [7:0] $end
+$var reg       8 R!   MEM[128] [7:0] $end
+$var reg       8 S!   MEM[129] [7:0] $end
+$var reg       8 T!   MEM[130] [7:0] $end
+$var reg       8 U!   MEM[131] [7:0] $end
+$var reg       8 V!   MEM[132] [7:0] $end
+$var reg       8 W!   MEM[133] [7:0] $end
+$var reg       8 X!   MEM[134] [7:0] $end
+$var reg       8 Y!   MEM[135] [7:0] $end
+$var reg       8 Z!   MEM[136] [7:0] $end
+$var reg       8 [!   MEM[137] [7:0] $end
+$var reg       8 \!   MEM[138] [7:0] $end
+$var reg       8 ]!   MEM[139] [7:0] $end
+$var reg       8 ^!   MEM[140] [7:0] $end
+$var reg       8 _!   MEM[141] [7:0] $end
+$var reg       8 `!   MEM[142] [7:0] $end
+$var reg       8 a!   MEM[143] [7:0] $end
+$var reg       8 b!   MEM[144] [7:0] $end
+$var reg       8 c!   MEM[145] [7:0] $end
+$var reg       8 d!   MEM[146] [7:0] $end
+$var reg       8 e!   MEM[147] [7:0] $end
+$var reg       8 f!   MEM[148] [7:0] $end
+$var reg       8 g!   MEM[149] [7:0] $end
+$var reg       8 h!   MEM[150] [7:0] $end
+$var reg       8 i!   MEM[151] [7:0] $end
+$var reg       8 j!   MEM[152] [7:0] $end
+$var reg       8 k!   MEM[153] [7:0] $end
+$var reg       8 l!   MEM[154] [7:0] $end
+$var reg       8 m!   MEM[155] [7:0] $end
+$var reg       8 n!   MEM[156] [7:0] $end
+$var reg       8 o!   MEM[157] [7:0] $end
+$var reg       8 p!   MEM[158] [7:0] $end
+$var reg       8 q!   MEM[159] [7:0] $end
+$var reg       8 r!   MEM[160] [7:0] $end
+$var reg       8 s!   MEM[161] [7:0] $end
+$var reg       8 t!   MEM[162] [7:0] $end
+$var reg       8 u!   MEM[163] [7:0] $end
+$var reg       8 v!   MEM[164] [7:0] $end
+$var reg       8 w!   MEM[165] [7:0] $end
+$var reg       8 x!   MEM[166] [7:0] $end
+$var reg       8 y!   MEM[167] [7:0] $end
+$var reg       8 z!   MEM[168] [7:0] $end
+$var reg       8 {!   MEM[169] [7:0] $end
+$var reg       8 |!   MEM[170] [7:0] $end
+$var reg       8 }!   MEM[171] [7:0] $end
+$var reg       8 ~!   MEM[172] [7:0] $end
+$var reg       8 !"   MEM[173] [7:0] $end
+$var reg       8 ""   MEM[174] [7:0] $end
+$var reg       8 #"   MEM[175] [7:0] $end
+$var reg       8 $"   MEM[176] [7:0] $end
+$var reg       8 %"   MEM[177] [7:0] $end
+$var reg       8 &"   MEM[178] [7:0] $end
+$var reg       8 '"   MEM[179] [7:0] $end
+$var reg       8 ("   MEM[180] [7:0] $end
+$var reg       8 )"   MEM[181] [7:0] $end
+$var reg       8 *"   MEM[182] [7:0] $end
+$var reg       8 +"   MEM[183] [7:0] $end
+$var reg       8 ,"   MEM[184] [7:0] $end
+$var reg       8 -"   MEM[185] [7:0] $end
+$var reg       8 ."   MEM[186] [7:0] $end
+$var reg       8 /"   MEM[187] [7:0] $end
+$var reg       8 0"   MEM[188] [7:0] $end
+$var reg       8 1"   MEM[189] [7:0] $end
+$var reg       8 2"   MEM[190] [7:0] $end
+$var reg       8 3"   MEM[191] [7:0] $end
+$var reg       8 4"   MEM[192] [7:0] $end
+$var reg       8 5"   MEM[193] [7:0] $end
+$var reg       8 6"   MEM[194] [7:0] $end
+$var reg       8 7"   MEM[195] [7:0] $end
+$var reg       8 8"   MEM[196] [7:0] $end
+$var reg       8 9"   MEM[197] [7:0] $end
+$var reg       8 :"   MEM[198] [7:0] $end
+$var reg       8 ;"   MEM[199] [7:0] $end
+$var reg       8 <"   MEM[200] [7:0] $end
+$var reg       8 ="   MEM[201] [7:0] $end
+$var reg       8 >"   MEM[202] [7:0] $end
+$var reg       8 ?"   MEM[203] [7:0] $end
+$var reg       8 @"   MEM[204] [7:0] $end
+$var reg       8 A"   MEM[205] [7:0] $end
+$var reg       8 B"   MEM[206] [7:0] $end
+$var reg       8 C"   MEM[207] [7:0] $end
+$var reg       8 D"   MEM[208] [7:0] $end
+$var reg       8 E"   MEM[209] [7:0] $end
+$var reg       8 F"   MEM[210] [7:0] $end
+$var reg       8 G"   MEM[211] [7:0] $end
+$var reg       8 H"   MEM[212] [7:0] $end
+$var reg       8 I"   MEM[213] [7:0] $end
+$var reg       8 J"   MEM[214] [7:0] $end
+$var reg       8 K"   MEM[215] [7:0] $end
+$var reg       8 L"   MEM[216] [7:0] $end
+$var reg       8 M"   MEM[217] [7:0] $end
+$var reg       8 N"   MEM[218] [7:0] $end
+$var reg       8 O"   MEM[219] [7:0] $end
+$var reg       8 P"   MEM[220] [7:0] $end
+$var reg       8 Q"   MEM[221] [7:0] $end
+$var reg       8 R"   MEM[222] [7:0] $end
+$var reg       8 S"   MEM[223] [7:0] $end
+$var reg       8 T"   MEM[224] [7:0] $end
+$var reg       8 U"   MEM[225] [7:0] $end
+$var reg       8 V"   MEM[226] [7:0] $end
+$var reg       8 W"   MEM[227] [7:0] $end
+$var reg       8 X"   MEM[228] [7:0] $end
+$var reg       8 Y"   MEM[229] [7:0] $end
+$var reg       8 Z"   MEM[230] [7:0] $end
+$var reg       8 ["   MEM[231] [7:0] $end
+$var reg       8 \"   MEM[232] [7:0] $end
+$var reg       8 ]"   MEM[233] [7:0] $end
+$var reg       8 ^"   MEM[234] [7:0] $end
+$var reg       8 _"   MEM[235] [7:0] $end
+$var reg       8 `"   MEM[236] [7:0] $end
+$var reg       8 a"   MEM[237] [7:0] $end
+$var reg       8 b"   MEM[238] [7:0] $end
+$var reg       8 c"   MEM[239] [7:0] $end
+$var reg       8 d"   MEM[240] [7:0] $end
+$var reg       8 e"   MEM[241] [7:0] $end
+$var reg       8 f"   MEM[242] [7:0] $end
+$var reg       8 g"   MEM[243] [7:0] $end
+$var reg       8 h"   MEM[244] [7:0] $end
+$var reg       8 i"   MEM[245] [7:0] $end
+$var reg       8 j"   MEM[246] [7:0] $end
+$var reg       8 k"   MEM[247] [7:0] $end
+$var reg       8 l"   MEM[248] [7:0] $end
+$var reg       8 m"   MEM[249] [7:0] $end
+$var reg       8 n"   MEM[250] [7:0] $end
+$var reg       8 o"   MEM[251] [7:0] $end
+$var reg       8 p"   MEM[252] [7:0] $end
+$var reg       8 q"   MEM[253] [7:0] $end
+$var reg       8 r"   MEM[254] [7:0] $end
+$var reg       8 s"   MEM[255] [7:0] $end
+$var reg       8 t"   out_reg [7:0] $end
+$var reg       8 u"   seq_addr [7:0] $end
+$var reg       1 v"   seq_prev $end
+$var wire      1 w"   seq_cont  $end
+$var wire      8 x"   cur_addr [7:0] $end
+$var integer  32 y"   i $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+b0 &
+b0 '
+bz (
+0)
+0*
+0+
+0,
+0-
+b0 .
+b0 /
+b0 0
+b0 1
+b0 2
+b0 3
+b0 4
+b0 5
+b0 6
+b0 7
+b0 8
+b0 9
+b0 :
+b0 ;
+b0 <
+b0 =
+b0 >
+b0 ?
+b0 @
+b0 A
+b0 B
+b0 C
+b0 D
+b0 E
+b0 F
+b0 G
+b0 H
+b0 I
+b0 J
+b0 K
+b0 L
+b0 M
+b0 N
+b0 O
+b0 P
+b0 Q
+b0 R
+b0 S
+b0 T
+b0 U
+b0 V
+b0 W
+b0 X
+b0 Y
+b0 Z
+b0 [
+b0 \
+b0 ]
+b0 ^
+b0 _
+b0 `
+b0 a
+b0 b
+b0 c
+b0 d
+b0 e
+b0 f
+b0 g
+b0 h
+b0 i
+b0 j
+b0 k
+b0 l
+b0 m
+b0 n
+b0 o
+b0 p
+b0 q
+b0 r
+b0 s
+b0 t
+b0 u
+b0 v
+b0 w
+b0 x
+b0 y
+b0 z
+b0 {
+b0 |
+b0 }
+b0 ~
+b0 !!
+b0 "!
+b0 #!
+b0 $!
+b0 %!
+b0 &!
+b0 '!
+b0 (!
+b0 )!
+b0 *!
+b0 +!
+b0 ,!
+b0 -!
+b0 .!
+b0 /!
+b0 0!
+b0 1!
+b0 2!
+b0 3!
+b0 4!
+b0 5!
+b0 6!
+b0 7!
+b0 8!
+b0 9!
+b0 :!
+b0 ;!
+b0 <!
+b0 =!
+b0 >!
+b0 ?!
+b0 @!
+b0 A!
+b0 B!
+b0 C!
+b0 D!
+b0 E!
+b0 F!
+b0 G!
+b0 H!
+b0 I!
+b0 J!
+b0 K!
+b0 L!
+b0 M!
+b0 N!
+b0 O!
+b0 P!
+b0 Q!
+b0 R!
+b0 S!
+b0 T!
+b0 U!
+b0 V!
+b0 W!
+b0 X!
+b0 Y!
+b0 Z!
+b0 [!
+b0 \!
+b0 ]!
+b0 ^!
+b0 _!
+b0 `!
+b0 a!
+b0 b!
+b0 c!
+b0 d!
+b0 e!
+b0 f!
+b0 g!
+b0 h!
+b0 i!
+b0 j!
+b0 k!
+b0 l!
+b0 m!
+b0 n!
+b0 o!
+b0 p!
+b0 q!
+b0 r!
+b0 s!
+b0 t!
+b0 u!
+b0 v!
+b0 w!
+b0 x!
+b0 y!
+b0 z!
+b0 {!
+b0 |!
+b0 }!
+b0 ~!
+b0 !"
+b0 ""
+b0 #"
+b0 $"
+b0 %"
+b0 &"
+b0 '"
+b0 ("
+b0 )"
+b0 *"
+b0 +"
+b0 ,"
+b0 -"
+b0 ."
+b0 /"
+b0 0"
+b0 1"
+b0 2"
+b0 3"
+b0 4"
+b0 5"
+b0 6"
+b0 7"
+b0 8"
+b0 9"
+b0 :"
+b0 ;"
+b0 <"
+b0 ="
+b0 >"
+b0 ?"
+b0 @"
+b0 A"
+b0 B"
+b0 C"
+b0 D"
+b0 E"
+b0 F"
+b0 G"
+b0 H"
+b0 I"
+b0 J"
+b0 K"
+b0 L"
+b0 M"
+b0 N"
+b0 O"
+b0 P"
+b0 Q"
+b0 R"
+b0 S"
+b0 T"
+b0 U"
+b0 V"
+b0 W"
+b0 X"
+b0 Y"
+b0 Z"
+b0 ["
+b0 \"
+b0 ]"
+b0 ^"
+b0 _"
+b0 `"
+b0 a"
+b0 b"
+b0 c"
+b0 d"
+b0 e"
+b0 f"
+b0 g"
+b0 h"
+b0 i"
+b0 j"
+b0 k"
+b0 l"
+b0 m"
+b0 n"
+b0 o"
+b0 p"
+b0 q"
+b0 r"
+b0 s"
+b0 t"
+b0 u"
+0v"
+0w"
+b0 x"
+b100000000 y"
+$end
+#500
+1!
+1)
+b0 y"
+b1 y"
+b10 y"
+b11 y"
+b100 y"
+b101 y"
+b110 y"
+b111 y"
+b1000 y"
+b1001 y"
+b1010 y"
+b1011 y"
+b1100 y"
+b1101 y"
+b1110 y"
+b1111 y"
+b10000 y"
+b10001 y"
+b10010 y"
+b10011 y"
+b10100 y"
+b10101 y"
+b10110 y"
+b10111 y"
+b11000 y"
+b11001 y"
+b11010 y"
+b11011 y"
+b11100 y"
+b11101 y"
+b11110 y"
+b11111 y"
+b100000 y"
+b100001 y"
+b100010 y"
+b100011 y"
+b100100 y"
+b100101 y"
+b100110 y"
+b100111 y"
+b101000 y"
+b101001 y"
+b101010 y"
+b101011 y"
+b101100 y"
+b101101 y"
+b101110 y"
+b101111 y"
+b110000 y"
+b110001 y"
+b110010 y"
+b110011 y"
+b110100 y"
+b110101 y"
+b110110 y"
+b110111 y"
+b111000 y"
+b111001 y"
+b111010 y"
+b111011 y"
+b111100 y"
+b111101 y"
+b111110 y"
+b111111 y"
+b1000000 y"
+b1000001 y"
+b1000010 y"
+b1000011 y"
+b1000100 y"
+b1000101 y"
+b1000110 y"
+b1000111 y"
+b1001000 y"
+b1001001 y"
+b1001010 y"
+b1001011 y"
+b1001100 y"
+b1001101 y"
+b1001110 y"
+b1001111 y"
+b1010000 y"
+b1010001 y"
+b1010010 y"
+b1010011 y"
+b1010100 y"
+b1010101 y"
+b1010110 y"
+b1010111 y"
+b1011000 y"
+b1011001 y"
+b1011010 y"
+b1011011 y"
+b1011100 y"
+b1011101 y"
+b1011110 y"
+b1011111 y"
+b1100000 y"
+b1100001 y"
+b1100010 y"
+b1100011 y"
+b1100100 y"
+b1100101 y"
+b1100110 y"
+b1100111 y"
+b1101000 y"
+b1101001 y"
+b1101010 y"
+b1101011 y"
+b1101100 y"
+b1101101 y"
+b1101110 y"
+b1101111 y"
+b1110000 y"
+b1110001 y"
+b1110010 y"
+b1110011 y"
+b1110100 y"
+b1110101 y"
+b1110110 y"
+b1110111 y"
+b1111000 y"
+b1111001 y"
+b1111010 y"
+b1111011 y"
+b1111100 y"
+b1111101 y"
+b1111110 y"
+b1111111 y"
+b10000000 y"
+b10000001 y"
+b10000010 y"
+b10000011 y"
+b10000100 y"
+b10000101 y"
+b10000110 y"
+b10000111 y"
+b10001000 y"
+b10001001 y"
+b10001010 y"
+b10001011 y"
+b10001100 y"
+b10001101 y"
+b10001110 y"
+b10001111 y"
+b10010000 y"
+b10010001 y"
+b10010010 y"
+b10010011 y"
+b10010100 y"
+b10010101 y"
+b10010110 y"
+b10010111 y"
+b10011000 y"
+b10011001 y"
+b10011010 y"
+b10011011 y"
+b10011100 y"
+b10011101 y"
+b10011110 y"
+b10011111 y"
+b10100000 y"
+b10100001 y"
+b10100010 y"
+b10100011 y"
+b10100100 y"
+b10100101 y"
+b10100110 y"
+b10100111 y"
+b10101000 y"
+b10101001 y"
+b10101010 y"
+b10101011 y"
+b10101100 y"
+b10101101 y"
+b10101110 y"
+b10101111 y"
+b10110000 y"
+b10110001 y"
+b10110010 y"
+b10110011 y"
+b10110100 y"
+b10110101 y"
+b10110110 y"
+b10110111 y"
+b10111000 y"
+b10111001 y"
+b10111010 y"
+b10111011 y"
+b10111100 y"
+b10111101 y"
+b10111110 y"
+b10111111 y"
+b11000000 y"
+b11000001 y"
+b11000010 y"
+b11000011 y"
+b11000100 y"
+b11000101 y"
+b11000110 y"
+b11000111 y"
+b11001000 y"
+b11001001 y"
+b11001010 y"
+b11001011 y"
+b11001100 y"
+b11001101 y"
+b11001110 y"
+b11001111 y"
+b11010000 y"
+b11010001 y"
+b11010010 y"
+b11010011 y"
+b11010100 y"
+b11010101 y"
+b11010110 y"
+b11010111 y"
+b11011000 y"
+b11011001 y"
+b11011010 y"
+b11011011 y"
+b11011100 y"
+b11011101 y"
+b11011110 y"
+b11011111 y"
+b11100000 y"
+b11100001 y"
+b11100010 y"
+b11100011 y"
+b11100100 y"
+b11100101 y"
+b11100110 y"
+b11100111 y"
+b11101000 y"
+b11101001 y"
+b11101010 y"
+b11101011 y"
+b11101100 y"
+b11101101 y"
+b11101110 y"
+b11101111 y"
+b11110000 y"
+b11110001 y"
+b11110010 y"
+b11110011 y"
+b11110100 y"
+b11110101 y"
+b11110110 y"
+b11110111 y"
+b11111000 y"
+b11111001 y"
+b11111010 y"
+b11111011 y"
+b11111100 y"
+b11111101 y"
+b11111110 y"
+b11111111 y"
+b100000000 y"
+#1000
+0!
+1"
+1*
+0)
+#1500
+1!
+1)
+#2000
+0!
+1$
+1,
+0)
+b0 (
+#2500
+1!
+1)
+#3000
+0!
+1#
+b10000 &
+b10101010 '
+b10101010 /
+b10000 .
+1+
+0)
+b10000 x"
+#3500
+1!
+1)
+b10101010 @
+b10101010 t"
+b10101010 (
+#4000
+0!
+b10001 &
+b10111011 '
+b10111011 /
+b10001 .
+0)
+b10001 x"
+#4500
+1!
+1)
+b10111011 A
+b10111011 t"
+b10111011 (
+#5000
+0!
+b10010 &
+b11001100 '
+b11001100 /
+b10010 .
+0)
+b10010 x"
+#5500
+1!
+1)
+b11001100 B
+b11001100 t"
+b11001100 (
+#6000
+0!
+0#
+b10000 &
+b10000 .
+0+
+0)
+b10000 x"
+#6500
+1!
+1)
+b10101010 t"
+b10101010 (
+#7000
+0!
+b10001 &
+b10001 .
+0)
+b10001 x"
+#7500
+1!
+1)
+b10111011 t"
+b10111011 (
+#8000
+0!
+b10010 &
+b10010 .
+0)
+b10010 x"
+#8500
+1!
+1)
+b11001100 t"
+b11001100 (
+#9000
+0!
+0$
+0,
+0)
+bz (
+#9500
+1!
+1)
+#10000
+0!
+0)
+#10500
+1!
+1)
+#11000
+0!
+1$
+1,
+0)
+b11001100 (
+#11500
+1!
+1)
+#12000
+0!
+1#
+1%
+b100000 &
+b10001 '
+b10001 /
+b100000 .
+1-
+1+
+0)
+b100000 x"
+#12500
+1!
+1)
+1v"
+b10001 P
+b10001 t"
+b100001 u"
+b10001 (
+1w"
+b100001 x"
+#13000
+0!
+b100010 '
+b100010 /
+0)
+#13500
+1!
+1)
+b100010 Q
+b100010 t"
+b100010 u"
+b100010 x"
+b100010 (
+#14000
+0!
+b110011 '
+b110011 /
+0)
+#14500
+1!
+1)
+b110011 R
+b110011 t"
+b100011 u"
+b100011 x"
+b110011 (
+#15000
+0!
+b1000100 '
+b1000100 /
+0)
+#15500
+1!
+1)
+b1000100 S
+b1000100 t"
+b100100 u"
+b100100 x"
+b1000100 (
+#16000
+0!
+0%
+0#
+0+
+0-
+0)
+0w"
+b100000 x"
+#16500
+1!
+1)
+0v"
+b10001 t"
+b10001 (
+#17000
+0!
+1%
+1-
+0)
+#17500
+1!
+1)
+1v"
+b100001 u"
+1w"
+b100001 x"
+#18000
+0!
+0)
+#18500
+1!
+1)
+b100010 t"
+b100010 u"
+b100010 x"
+b100010 (
+#19000
+0!
+0)
+#19500
+1!
+1)
+b110011 t"
+b100011 u"
+b100011 x"
+b110011 (
+#20000
+0!
+0)
+#20500
+1!
+1)
+b1000100 t"
+b100100 u"
+b100100 x"
+b1000100 (
+#21000
+0!
+0%
+0-
+0)
+0w"
+b100000 x"
+#21500
+1!
+1)
+0v"
+b10001 t"
+b10001 (
+#22000
+0!
+0)
+#22500
+1!
+1)
+#23000

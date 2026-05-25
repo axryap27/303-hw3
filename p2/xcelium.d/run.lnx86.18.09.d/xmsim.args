@@ -2,12 +2,11 @@
 // File created by:  xrun
 // Do not modify this file
 //
--gui
 -MESSAGES
 +EMGRLOG
 xrun.log
 -XLSTIME
-1779733386
+1779737755
 -XLKEEP
 -XLMODE
 ./xcelium.d/run.lnx86.18.09.d
@@ -20,5 +19,3 @@ xrun.log
 xrun
 -XLVERSION
 "TOOL:	xrun	18.09-s011"
--XLNAME
-./xcelium.d/run.lnx86.18.09.d/batman.ece.northwestern.edu_3679750

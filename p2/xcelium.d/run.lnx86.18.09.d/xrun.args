@@ -1,0 +1,8 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+memory_module.v
+memory_module_tb.v
+-access
++rwc
