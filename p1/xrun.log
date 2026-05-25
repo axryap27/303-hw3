@@ -1,40 +1,19 @@
 xrun: 18.09-s011: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	xrun	18.09-s011: Started on May 25, 2026 at 11:23:25 CDT
+TOOL:	xrun	18.09-s011: Started on May 25, 2026 at 12:39:43 CDT
 xrun
+	-gui
 	transition_detector.v
 	transition_detector_tb.v
 	-access +rwc
-file: transition_detector.v
-	module worklib.transition_detector:v
-		errors: 0, warnings: 0
-file: transition_detector_tb.v
-	module worklib.transition_detector_tb:v
-		errors: 0, warnings: 0
-		Caching library 'worklib' ....... Done
-	Elaborating the design hierarchy:
-	Top level design units:
-		transition_detector_tb
-	Building instance overlay tables: .................... Done
-	Generating native compiled code:
-		worklib.transition_detector_tb:v <0x03154f24>
-			streams:   7, words: 11813
-		worklib.transition_detector:v <0x0cf939c1>
-			streams:   4, words:  1104
-	Building instance specific data structures.
-	Loading native compiled code:     .................... Done
-	Design hierarchy summary:
-		                 Instances  Unique
-		Modules:                 2       2
-		Registers:               5       5
-		Scalar wires:            4       -
-		Always blocks:           2       2
-		Initial blocks:          2       2
-		Cont. assignments:       1       1
-		Pseudo assignments:      3       3
-		Simulation timescale:  1ps
-	Writing initial simulation snapshot: worklib.transition_detector_tb:v
-Loading snapshot worklib.transition_detector_tb:v .................... Done
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
 xcelium> source /vol/cadence2018/XCELIUM1809/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm transition_detector_tb.dut.Q0 transition_detector_tb.dut.Q1 transition_detector_tb.dut.clk transition_detector_tb.dut.in transition_detector_tb.dut.out transition_detector_tb.dut.rstb
+Created probe 1
 xcelium> run
   time | rstb | in | out | Q1 Q0
 -------+------+----+-----+------
@@ -57,5 +36,15 @@ xcelium> run
 105000 |  1   | 0  |  1  |  0  1
 Simulation complete via $finish(1) at time 115 NS + 0
 ./transition_detector_tb.v:58         #5 $finish;
-xcelium> exit
-TOOL:	xrun	18.09-s011: Exiting on May 25, 2026 at 11:23:27 CDT  (total: 00:00:02)
+xcelium> run
+xmsim: *E,RNFNSH: Cannot continue simulation due to a previous $finish.
+xcelium> run
+xmsim: *E,RNFNSH: Cannot continue simulation due to a previous $finish.
+xcelium> run
+xmsim: *E,RNFNSH: Cannot continue simulation due to a previous $finish.
+xcelium> probe -create -shm transition_detector_tb.dut.Q0 transition_detector_tb.dut.Q1 transition_detector_tb.dut.clk transition_detector_tb.dut.in transition_detector_tb.dut.out transition_detector_tb.dut.rstb transition_detector_tb.clk transition_detector_tb.in transition_detector_tb.out transition_detector_tb.rstb
+Created probe 2
+xcelium> run
+xmsim: *E,RNFNSH: Cannot continue simulation due to a previous $finish.
+xcelium> ^C
+xcelium> 

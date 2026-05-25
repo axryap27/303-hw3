@@ -1,0 +1,9 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-gui
+transition_detector.v
+transition_detector_tb.v
+-access
++rwc

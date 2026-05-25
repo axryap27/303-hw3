@@ -2372,3 +2372,5 @@ Warning : Possible timing problems have been detected in this design. [TIM-11]
 Finished SDC export (command execution time mm:ss (real) = 00:00).
 #@ End verbose source synth_opt_high.tcl
 WARNING: This version of the tool is 2615 days old.
+@genus:design:transition_detector 2> exit
+Normal exit.
